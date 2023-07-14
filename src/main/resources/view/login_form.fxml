@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="523.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.liveChat.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="581.0" fitWidth="331.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/peakpx%20(1).jpg" />
+         </image></ImageView>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="62.0" layoutY="298.0" onAction="#txtUserNameOnAction" prefHeight="42.0" prefWidth="238.0" promptText="UserName" styleClass="edge-button" stylesheets="@../style/style.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <JFXButton layoutX="53.0" layoutY="433.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="81.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="62.0" layoutY="360.0" onAction="#txtPasswordOnAction" prefHeight="42.0" prefWidth="238.0" promptText="Password" styleClass="edge-button" stylesheets="@../style/style.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></PasswordField>
+      <JFXButton layoutX="193.0" layoutY="433.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="81.0" text="Sing In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutY="-4.0" opacity="0.45" prefHeight="254.0" prefWidth="323.0" style="-fx-background-color: grey;" styleClass="pane" stylesheets="@../style/styleAnchorPane.css" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="23.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-login.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="23.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-lock.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="96.0" layoutX="28.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/meeting-room.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="162.0" layoutY="77.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="173.0" text="Chat Room" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="524.0" text="\@KTK" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
